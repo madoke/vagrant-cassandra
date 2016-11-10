@@ -105,7 +105,7 @@ wget -q -O - http://debian.datastax.com/debian/repo_key | sudo apt-key add -
 apt-get update
 
 # install Java first, then DataStax Community Edition
-apt-get install openjdk-7-jdk libjna-java -y
+apt-get install openjdk-7-jre-headless=7u51-2.4.6-1ubuntu4 openjdk-7-jre=7u51-2.4.6-1ubuntu4 openjdk-7-jdk=7u51-2.4.6-1ubuntu4 libjna-java -y
 apt-get install vim curl zip unzip git python-pip python-support dsc21=2.1.13-1 cassandra=2.1.13 datastax-agent -y
 
 # stop Cassandra (which automatically starts after install) and clear data files
